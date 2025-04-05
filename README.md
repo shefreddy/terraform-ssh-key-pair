@@ -86,9 +86,9 @@ terraform destroy -auto-approve
 ## **Outputs**
 Terraform will output **EC2, Lightsail and Private Key pair Name**, which you can use to access the website:
 ```sh
-ec2_key_name aws_key_pair.ec2_key.key_name
-lightsail_key_name aws_lightsail_key_pair.lightsail_key.name
-private_key_saved_to local_file.private_key.filename
+ec2_key_name = "aws_key_pair.ec2_key.key_name"
+lightsail_key_name = "aws_lightsail_key_pair.lightsail_key.name"
+private_key_saved_to = "local_file.private_key.filename"
 ```
 
 ### **Author: Freddy Shema**
